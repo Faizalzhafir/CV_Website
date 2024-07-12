@@ -1,5 +1,5 @@
 *, *:before, *:after {
-    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: sans-serif;
    }
   
   html
@@ -17,7 +17,51 @@
       line-height:1.4;
       text-rendering:optimizeLegibility;
   }
+
   
+  .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  
+  .card{
+    width: 325px;
+    background-color: #2e4600;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0,2);
+    margin: 20px;
+  }
+
+  .card img{
+    width: 100%;
+    height: auto;
+  }
+.card-content{
+    padding: 16px;
+  }
+.card-container .card .card-content h3{
+    font-size: 21px;
+    margin-bottom: 8px;
+    color: #FFF;
+    background-color: #486b00;
+    border-radius: 10px;
+  } 
+
+ 
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #486b00;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+ }
+
+ 
   .skill-set li:hover
   {
       background:#fff;
